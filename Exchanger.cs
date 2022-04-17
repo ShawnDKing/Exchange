@@ -11,20 +11,41 @@ namespace Exchange
 
 
         //manages currency exchange. Specifically, you will write methods for each currency type and exchange rate
-        public static float _fromCurrency;
-        public static float _toCurrency;
+        public static double _fromCurrency;
+        public static double _toCurrency;
         public static int total = 0;
 
         static Exchanger()
         {
-            float From = _fromCurrency;
-            float To = _toCurrency;
+           double From = _fromCurrency;
+            double To = _toCurrency;
             total++;
         }
-        static float ConvertCurrency(float From, float To)
+        static double ConvertCurrency(double From, double To)
         {
-            float exchangeRate = From / To;
+            double exchangeRate = From * To;
             return exchangeRate;
+        }
+
+        static double USD(double cashIn)
+        {
+            double USD = 1;
+            return USD;
+        }
+        static double GBP(double cashIn)
+        {
+            double GBP = 0.72523;
+            return GBP;
+        }
+        static double CAN(double cashIn)
+        {
+            double CAN = 0.72523;
+            return CAN;
+        }
+        static double EUR(double cashIn)
+        {
+            double EUR = 0.72523;
+            return EUR;
         }
         
 

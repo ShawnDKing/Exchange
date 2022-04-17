@@ -7,9 +7,9 @@ namespace Exchange
         static void Main(string[] args)
         {
 
-            
-            
 
+
+           
             Console.WriteLine("Welcome to the currency exchange system");
             Console.WriteLine("Available currencies are: (USD) US Dollar, (GBP) British Pound, (CAN) Canadian Dollar, or (EUR) Euro");
 
@@ -25,14 +25,13 @@ namespace Exchange
                 Console.WriteLine("Please select your currency you want to convert TO (Example - GBP): ");
                 string To = Console.ReadLine();
 
-
-
-
-            } 
-
-            
+                //Console.WriteLine("The exchange rate is: USD - " + ();
                 //Console.WriteLine("Your total currency in USD = " + total);
-                Console.WriteLine("Thank you for using the currency exchange.");
+            }
+
+
+
+            Console.WriteLine("Thank you for using the currency exchange.");
            
 
               
