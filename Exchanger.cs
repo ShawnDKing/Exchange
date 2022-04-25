@@ -9,42 +9,35 @@ namespace Exchange
     public static class Exchanger
     {
 
-
         //manages currency exchange. Specifically, you will write methods for each currency type and exchange rate
-        public static double _fromCurrency;
-        public static double _toCurrency;
-        public static int total = 0;
 
-        static Exchanger()
+        public static double ReturnExchangeRate(double From, double To)
         {
-           double From = _fromCurrency;
-            double To = _toCurrency;
-            total++;
-        }
-        static double ConvertCurrency(double From, double To)
-        {
-            double exchangeRate = From * To;
-            return exchangeRate;
+
+            double Num1 = From;
+            double Num2 = To;
+            double Answer = Num1 * Num2;
+            return Answer;
         }
 
-        static double USD(double cashIn)
+        public static double addUSD()
         {
-            double USD = 1;
+            double USD = 1.00;
             return USD;
         }
-        static double GBP(double cashIn)
+        static double addGBP()
         {
             double GBP = 0.72523;
             return GBP;
         }
-        static double CAN(double cashIn)
+        public static double addCAN()
         {
-            double CAN = 0.72523;
+            double CAN = 1.25427;
             return CAN;
         }
-        static double EUR(double cashIn)
+        public static double addEUR()
         {
-            double EUR = 0.72523;
+            double EUR = 0.83572;
             return EUR;
         }
         
